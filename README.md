@@ -21,7 +21,9 @@ Configuration
 
 ```php
 <?php
-$dispatcher = new NatsMessageDispatcher($pheanstalk);
+$options = new \Nats\ConnectionOptions();
+$conn = new \Nats\Connection($options);
+$dispatcher = new NatsMessageDispatcher($conn);
 $queue = new DefaultQueue('queue');
 
 /* @var $listener MessageListener */
