@@ -1,0 +1,16 @@
+.vagrant
+/build/api
+/build/code-browser
+/build/coverage
+/build/logs
+/build/pdepend
+/build/phpdox
+vendor/
+*~
+.idea/
+*.swp
+/nbproject/private/
+/*.log
+/build
+cache.properties
+composer.lock
